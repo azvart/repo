@@ -5,7 +5,7 @@ const Todo = () =>{
         items:[],
         text:''
     });
-
+//https://codepen.io/iamjoshellis/pen/zBjEpL
     const handleAddItem =(event) =>{
         event.preventDefault();
 
