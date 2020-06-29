@@ -1,14 +1,20 @@
-import React from 'react';
-import Todo from './components/tasks/todo/todo';
-import Calculator from './components/tasks/calculator/calculator';
+import React from 'react'
+import Footer from './components/todos/footer';
+import AddTodo from './containers/addtodo';
+import VisibleTodoList from './containers/VisibleTodoList';
 
-function App() {
-  return (
-    <div className="App container-fluid">
-        <Todo />
-        <Calculator />
+const App = () => (
+  <div className='container-fluid text-center'>
+      <div className='row'>
+      <div className='col-lg-12 my-3'>
+    <AddTodo />
+    <VisibleTodoList />
     </div>
-  );
-}
+    <div className='col-lg-12 my-3'>
+    <Footer />
+    </div>
+    </div>
+  </div>
+)
 
-export default App;
+export default App
